@@ -19,7 +19,7 @@ def index(request):
 
 
 def demo(request):
-    """Demo view runs then prediction"""
+    """Demo view (runs prediction)"""
     app = ClarifaiApp(api_key=clarifai_api_key)
     model = app.models.get(clarifai_model_name)
     template = loader.get_template('khclarifai/demo.html')

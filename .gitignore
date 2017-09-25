@@ -61,7 +61,7 @@ db.sqlite3
 migrations/
 
 config/settings_*
-config/settings.cfg
+# config/settings.cfg
 
 # exclude audio data
 data/set*/speaker*

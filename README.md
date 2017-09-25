@@ -56,11 +56,11 @@ In each of the test set folders, there is a "train.csv" file which contains anno
 
 ### Adapt configuration settings
 
-There are default settings in the configuration file which can be adapted if desired:
+The Clarifai API token must be defined in the settings file (parameter 'clarifai_api_key'):
 
     khclass/settings.cfg
     
-These are the settings which can be configured:
+There are default settings for other parameters which can be adapted if desired:
 
 * clarifai_api_key: Clarify API token (you need to be registered at https://clarifai.com to get an API key)
 * data_dir: Data directory which coincides with the static file directory of Django
