@@ -1,0 +1,21 @@
+{% load staticfiles i18n %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<table border="1">
+    <th>Image</th><th>Human annotation</th><th>Prediction confidence</th></tr>
+{% for result in results %}
+    <tr>
+        <td><img style="width:200px" src="{% static result.image_path %}"/></td>
+        <td>{{ result.concept }}</td>
+        <td>{{ result.prediction_confidence }}</td>
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>
