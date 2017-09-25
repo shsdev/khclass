@@ -13,6 +13,14 @@ in test set "test1" and 47 images in test set "test2" available in the "static/i
 In each of the test set folders, there is a "train.csv" file which contains annotations (in German) for the training data set and a 
 "predict.csv" used to predict the class. 
 
+The following screenshot shows the result of the question "To what degree is the object on the image representative for the concept
+"Truhe" (engl. "coffer", "footlocker").
+
+![Api key authorization](docs/img/example.png)
+
+In this sense, the value in the column "Prediction confidence" means the degree of "cofferness" or "footlockerness" of the corresponding 
+image in the leftmost column.
+
 ## Installation
 
 1. Checkout project
