@@ -101,6 +101,11 @@ Open browser at and click on the "Demo" link which will execute the prediction o
     
 It will take a few seconds until the table with the results is shown because the prediction is executed when the page is loaded.
 
+In this demo, the model is trained for a single test concept which is defined in the configuration file. The same concept is 
+used for predicting the degree of confidence that the concept is representative for the image. To run the prediction on a new concept, a new model
+has to be trained for this concept first. I.e. change the value of 'test_concept' in 'config/settings.cfg', run the training module
+'khclarifai/khclarify_train.py', and then you can run the prediction for the new test concept.
+
 ## License
 
 Licensed under GNU GENERAL PUBLIC LICENSE Version 3 available at https://www.gnu.org/licenses/gpl-3.0.txt.

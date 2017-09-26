@@ -8,7 +8,11 @@
 <body>
 
 <table border="1">
-    <th>Image</th><th>Human annotation</th><th>Prediction confidence</th></tr>
+    <tr>
+        <th>Image</th>
+        <th>Human annotation</th>
+        <th>Prediction confidence for concept "<span style="color:#FF0000">{{ concept }}"</span></th>
+    </tr>
 {% for result in results %}
     <tr>
         <td><img style="width:200px" src="{% static result.image_path %}"/></td>

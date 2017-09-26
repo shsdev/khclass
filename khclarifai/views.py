@@ -6,7 +6,7 @@ from django.template import loader
 from django.http import HttpResponse
 import pandas as pd
 from clarifai.rest import ClarifaiApp
-from config.configuration import data_path, clarifai_api_key, test_set_id, clarifai_model_name
+from config.configuration import data_path, clarifai_api_key, test_set_id, clarifai_model_name, test_concept
 from khclarifai.khclarifai_predict import get_prediction_confidence, floored_percentage
 
 
@@ -32,5 +32,6 @@ def demo(request):
         results.append({'image_path': image_path, 'prediction_confidence': pred_conf, 'concept': concept})
     context = {
         'results': results,
+        'concept': test_concept,
     }
     return HttpResponse(template.render(context=context, request=request))
